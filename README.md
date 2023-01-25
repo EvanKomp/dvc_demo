@@ -1,6 +1,11 @@
 # Demo of data version control DVC
 
-Install dvc and the necessary deps with `environment.yml`.
+## Install necessary deps:
+```
+pip install dvc
+pip install numpy
+pip install pyyaml
+```
 
 ## Git tracked files
 
