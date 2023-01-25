@@ -8,10 +8,11 @@ with open("./params.yaml", "r") as stream:
 
 # get the data
 data = numpy.load('./data/raw_data.npy')
+print(data)
 
 # split the data
 train_last_index = int((1-params['test_size']) * len(data))
-data = numpy.random.shuffle(data)
+numpy.random.shuffle(data)
 train = data[:train_last_index,:]
 test = data[train_last_index:,:]
 

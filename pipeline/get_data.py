@@ -12,7 +12,7 @@ else:
     pass
 
 # generate data
-data = numpy.random.uniform((100,20))
+data = numpy.random.random(size=(100,20))
 
 # save data
 numpy.save('./data/raw_data.npy', data)
