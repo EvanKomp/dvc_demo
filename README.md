@@ -1,5 +1,7 @@
 # Demo of data version control DVC
 
+Install dvc and the necessary deps with `environment.yml`.
+
 ## Git tracked files
 
 ```
@@ -31,6 +33,17 @@ After running the DVC code, we will have the following:
 ```
 dvc init
 dvc repro
+git add dvc.lock
 git commit -m "ran dvc"
-git push
+```
+
+execute `dvc repro` again... note that everything is skipped! no parameters or dependancies changed.
+
+## To run an experiment with a new parameter, look at the result of all experiments
+
+After the above has been executed...
+
+```
+dvc exp run -S 'process_data.test_size=0.5'
+dvc metrics show
 ```
