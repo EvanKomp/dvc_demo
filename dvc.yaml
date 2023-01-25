@@ -13,4 +13,4 @@ stages:
     params:
     - process_data.test_size
     metrics:
-    - ./data/metrics/process_data_metrics.yaml
+    - ./metrics/process_data_metrics.yaml
