@@ -45,5 +45,5 @@ After the above has been executed...
 
 ```
 dvc exp run -S 'process_data.test_size=0.5'
-dvc metrics show
+dvc exp show
 ```
